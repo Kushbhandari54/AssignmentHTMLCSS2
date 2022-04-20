@@ -1,0 +1,89 @@
+#delay{
+    font-size: 30px;
+    transition-property:font-size;
+    transition-duration: 4s;
+    transition-delay: 1s; 
+}
+
+#delay:hover{
+    font-size: 50px;
+
+}
+
+.box{
+    border-style: solid;
+    border-width: 5px;
+    border-color: red;
+    transition:border-width 2s;
+    color:black;
+}
+
+.box:hover{
+    border-width: 10px;
+    border-style: inset;
+    color:green;
+}
+.transform{
+    transform: rotate(90deg);
+    transform: skewY(20deg);
+    transform-origin:bottom left;
+}
+.heading{
+    color:gray;
+    border-bottom:2px solid black;
+    text-align: center;
+}
+/*--------------css combinators---------------*/
+#abc p{
+    font-size: 20px;
+    color:red;
+    font-family: sans-serif;
+}
+
+#cde > p{
+    font-size: 20px;
+    color:red;
+    font-family: sans-serif;
+}
+
+#adjacent + p{
+    font-size: 20px;
+    color:red;
+    font-family: sans-serif;   
+}
+
+#general ~ p{
+    font-size: 20px;
+    color:red;
+    font-family: sans-serif;   
+}
+
+/* CSS chaning Concept*/
+
+/* Rather than writing the same css 
+for three different element indiviually
+we write one's for all */
+
+#heading1,#chaining,#section{
+    font-size: 20px;
+    color:aqua
+}
+
+
+/*Distances*/
+#rem{
+    font-size: 2rem;
+}
+#em{
+    font-size: 2em;
+}
+#vh{
+    font-size: 2vh;
+}
+#vw{
+    font-size: 2vw;
+}
+#px{
+    font-size: 20px;
+}
+

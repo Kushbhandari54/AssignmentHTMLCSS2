@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+
+    <!-- 1. Demo specifying the difference between rem,em,vh,vw,px.-->
+
+    <h1 class="heading">Distances</h1>
+    <h2>Rem</h2>
+
+    <div>
+        <p id="px">This is distance with 20px and px is absolute unit.
+            The PX unit is fixed and does not change based on any other element
+        </p>
+        <p id="rem">This is distance with 2 rem.REM is Relative to the root element (HTML tag)</p>
+
+        <p id="em">This is distance with 2 em.EM is Relative to the parent element</p>
+        <p id="vh">This is distance with 2 vh.VH is Relative to the viewport’s height</p>
+        <p id="vw">This is distance with 2 vw.VW is Relative to the viewport’s width</p>
+
+        <h2>A comparison chart</h2>
+        <p>
+            1em = 16px (1 * 16)
+            2em = 32px (2 * 16)
+            .5em = 8px (.5 * 16)
+
+            1rem = 16px
+            2rem = 32px
+            .5rem = 8px
+
+            100% = 16px
+            200% = 32px
+            50% = 8px
+
+        </p>
+
+    </div>
+
+
+
+    <!--2. Reduce css code using CSS chaining concept.-->
+
+    <h1 class="heading">Css Chaining</h1>
+    <h1 id="heading1">This is a heading </h1>
+    <p id="chaining">This is a paragraph</p>
+    <section id="section">This is section of a page</section>
+
+
+
+    <!-- 3. Demo specifying difference between css combinators (>,+,~) -->
+    <h1 class="heading">Css Combinators</h1>
+    <h2>1. Descendant Selector</h2>
+    <div id="abc">
+        <p>This is para1</p>
+        <p>This is para2</p>
+        <section>
+            <p>This is para3</p>
+        </section>
+
+    </div>
+    <p>This is para 4 </p>
+
+    <h2>2.Child Selector</h2>
+    <div id="cde">
+        <p>This is para1</p>
+        <p>This is para2</p>
+        <section>
+            <p>This is not the child of div</p>
+        </section>
+    </div>
+
+    <h2>3.Adjacent Sibiling Selector( + )</h2>
+    <div id="adjacent">
+        <p>This is not sibiling</p>
+    </div>
+    <p>This is adjacent sibiling </p>
+
+    <h2>4.General Sibiling Selector (~)</h2>
+    <div id="general">
+        <p>This is paragraph1</p>
+        <p>This is paragraph1</p>
+    </div>
+    <p>This is General sibiling paragraph3</p>
+    <p>This is General sibiling paragraph4</p>
+
+
+    <!-- 4. Create a demo for css transition and transform.-->
+
+    <h1 class="heading">Css transform</h1>
+
+    <div>
+        <p>Normal image</p><img src="./images/riverImg.jpg" alt="river images" width="100" height="100">
+    </div>
+    <div class="transform">
+        <p>Transform image and text</p><img src="./images/riverImg.jpg" alt="river image" width="100px" height="100px">
+    </div>
+
+    <h1 class="heading">Css transitions</h1>
+    <h1 id="delay">This text will change on hovering over it</h1>
+    <h1 class="box">Multiple animated properties example</h1>
+</body>
+
+</html>
